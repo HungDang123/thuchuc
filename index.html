@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chúc Sức Khỏe</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .card {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 90%;
+            max-width: 600px;
+            padding: 30px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .header {
+            margin-bottom: 25px;
+        }
+        
+        h1 {
+            color: #ff6b8b;
+            font-size: 28px;
+            margin: 0;
+            padding-bottom: 15px;
+            position: relative;
+        }
+        
+        h1:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: linear-gradient(to right, #ff6b8b, #fda085);
+        }
+        
+        .content {
+            padding: 20px 0;
+            line-height: 1.6;
+        }
+        
+        p {
+            color: #4a4a4a;
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+        
+        .highlight {
+            color: #ff6b8b;
+            font-weight: bold;
+        }
+        
+        .heart {
+            font-size: 60px;
+            color: #ff6b8b;
+            margin: 20px 0;
+            animation: heartbeat 1.5s infinite;
+        }
+        
+        .flowers {
+            display: flex;
+            justify-content: space-around;
+            margin: 30px 0;
+        }
+        
+        .flower {
+            font-size: 30px;
+            animation: sway 3s infinite ease-in-out;
+        }
+        
+        .flower:nth-child(odd) {
+            animation-delay: 0.5s;
+        }
+        
+        .signature {
+            margin-top: 30px;
+            font-style: italic;
+            color: #777;
+        }
+        
+        @keyframes heartbeat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+        
+        @keyframes sway {
+            0%, 100% { transform: rotate(-5deg); }
+            50% { transform: rotate(5deg); }
+        }
+        
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background: linear-gradient(to right, #ff6b8b, #fda085);
+            color: white;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(253, 160, 133, 0.3);
+            transition: all 0.3s ease;
+        }
+        
+        .button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(253, 160, 133, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="header">
+            <h1>Chúc Bé Nga Luôn Khỏe Mạnh & Hạnh Phúc</h1>
+        </div>
+        
+        <div class="content">
+            <p>Gửi đến bé Nga dễ thương,</p>
+            
+            <p>Chúc bé luôn tràn đầy <span class="highlight">năng lượng</span> mỗi ngày thức dậy, luôn mạnh khỏe để học tập thật tốt và vui chơi thật nhiều.</p>
+            
+            <p>Mong rằng bé sẽ luôn tìm thấy <span class="highlight">niềm vui</span> trong cuộc sống, và mỗi ngày đều là một ngày tràn ngập tiếng cười.</p>
+            
+            <div class="heart">❤️</div>
+            
+            <p>Hãy nhớ giữ gìn <span class="highlight">sức khỏe</span> thật tốt, ngoan ngoãn nghe lời ba mẹ, và luôn là một cô bé ngoan và đáng yêu nhé!</p>
+            
+            <p>Chúc bé luôn vui vẻ và hạnh phúc trong mọi khoảnh khắc của cuộc sống.</p>
+            
+            <div class="flowers">
+                <div class="flower">🌸</div>
+                <div class="flower">🌺</div>
+                <div class="flower">🌹</div>
+                <div class="flower">🌷</div>
+                <div class="flower">🌻</div>
+            </div>
+            
+            <a href="#" class="button">Thương Em Bé Nhiều ❤️</a>
+            
+            <div class="signature">
+                <p>Với tất cả yêu thương,</p>
+                <p>Người luôn thương bé</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
